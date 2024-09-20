@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+enum Animal {
+    Ukn = 0;
+    Dog = 1;
+}
+
+enum AnimalV2 {
+    UknV2 = 0;
+    DogV2 = 1;
+    Cat = 2;
+}
+
+message Foo {
+    Animal animal = 1;
+}
+
+message FooV2 {
+    AnimalV2 animal = 1;
+}
